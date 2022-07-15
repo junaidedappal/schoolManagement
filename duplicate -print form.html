@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="paymentstyle.css">
+</head>
+
+<body style="max-width: 1000px; padding-left: 10%;">
+	<div class="top" style="background-color:#c89666;padding: 5px;">   
+	    <div class="topleft">
+				<p style="padding: 3px;font-size: 20px;color: white">Manshaul Uloom Madrassa <br>Vattamkulam</p>
+		</div>
+			<div class="topright" style="position: absolute;top: 0px;">
+			       <img src="Samastha_Flag.png" style="height: 75px;width: 140px;padding: 5px;">
+
+			</div>
+	</div>
+
+	<nav class="navbar" style="background-color: #2d545e;margin-top: -15px;">
+		<ul class="navul">
+			<li class="navli"><a href="home.php" class="anone">Home</a></li>
+			<li class="navli"><a href="registration.html" class="anone">Registration</a></li>
+			
+		</ul>
+	</nav>
+
+	<div class="containerbody">
+		<div class="containerbodyleft" style="background-color: #2d545e">
+			<ul class="leftul" style="padding: 30px;margin-top: -10px;">
+				<li class="leftlist"><a class="anone" href="">INFO</a></li>
+				<li class="leftlist"><a class="anone" href="">INFO</a></li>
+				<li class="leftlist"><a class="anone" href=""> INFO</a></li>
+				<li class="leftlist"><a class="anone" href=""> INFO</a></li>
+				<li class="leftlist"><a class="anone" href="">INFO</a></li>
+			</ul>
+		</div>  
+		<div class="containerbodyright" style="background-color: #e1b382">
+		 	
+
+
+
+
+<style >
+	.formitem input[type="text"]
+	{
+		margin-bottom: 4px;
+    }
+
+
+.month_checkbox input[type="checkbox"]
+{
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+</style>
+<body>
+<form method="POST" action="fee.php">
+				<table style="margin-top: 25px;">
+					<th>Reg. No</th>
+					<th>Name</th>				
+				    <th>Class</th>
+					<th>Date</th>
+					<tr>
+		<td style="padding: 10px;"><input type="number" name="reg_num" placeholder="Reg No"></td>
+		<td><input type="text" name="name" placeholder="Name" ></td>
+		<td style="padding-left: 20px;"><select name="class"><option selected="">--class--</option>
+		<option value="1">1</option>	
+		<option value="2">2</option>
+		<option value="3">3</option>	
+		<option value="4">4</option>	
+		<option value="5">5</option>	
+		<option value="6">6</option>	
+		<option value="7">7</option>	
+		<option value="8">8</option>	
+		<option value="9">9</option>	
+		<option value="10">10</option>	
+		<option value="11">11</option>
+		<option value="12">12</option>	
+     	</select>
+		</td>
+		<td style="padding-left: 30px;"><input type="text" name="date" value="<?php echo date("d-m-Y"); ?>"></td>
+		
+					</tr>
+   <div>
+        <tr>
+			    <td colspan="2" rowspan="10">
+			    <div class="formitem">
+			    <fieldset>
+			    <legend style="font-weight: bolder;">Particulars</legend>
+				<input type="text" name="item1" placeholder="Item">
+                <input type="text" name="price1" placeholder="Unit Price"><br>
+                <input type="text" name="item2" placeholder="Item">
+                <input type="text" name="price2" placeholder="Unit Price"><br>
+                <input type="text" name="item3" placeholder="Item">
+                <input type="text" name="price3" placeholder="Unit Price"><br>
+                <input type="text" name="item4" placeholder="Item">
+                <input type="text" name="price4" placeholder="Unit Price"><br>
+                <input type="text" name="item5" placeholder="Item">
+                <input type="text" name="price5" placeholder="Unit Price"><br> 
+                <input type="text" name="item6" placeholder="Item">
+                <input type="text" name="price6" placeholder="Unit Price"><br>
+				<input type="text" name="item7" placeholder="Item">
+                <input type="text" name="price7" placeholder="Unit Price"><br>
+				<input type="text" name="item8" placeholder="Item">
+                <input type="text" name="price8" placeholder="Unit Price"><br>
+                <input type="text" name="item9" placeholder="Item">
+                <input type="text" name="price9" placeholder="Unit Price"><br>
+				<input type="text" name="item10" placeholder="Item">
+                <input type="text" name="price10" placeholder="Unit Price"><br>
+				<input type="text" name="item11" placeholder="Item">
+                <input type="text" name="pric11" placeholder="Unit Price"><br>
+                <input type="text" name="item12" placeholder="Item">
+                <input type="text" name="price12" placeholder="Unit Price"><br>
+				<input type="text" name="item13" placeholder="Item">
+                <input type="text" name="price13" placeholder="Unit Price"><br>
+				
+				
+				</fieldset></div>		
+				</td>
+
+
+			<td colspan="2" ><div style="margin-top: 10px;">
+							<fieldset style="">
+
+				<label style="font-weight: bold;margin: 5px;">Fee Amount</label>&nbsp<input type="number" name="amount" ></div>
+
+				<div class="month_checkbox" style="background: white;margin-top: 20px;">
+			
+			<legend style="font-weight: bolder;">Select Month</legend>
+			<input type="checkbox" name="apr" value="apr"><label>Apr</label>
+			<input type="checkbox" name="may" value="may"><label>May</label>
+			<input type="checkbox" name="jun" value="jun"><label>Jun</label>
+			<input type="checkbox" name="jul" value="jul"><label>Jul</label><br>
+			<input type="checkbox" name="aug" value="aug"><label>Aug</label>
+			<input type="checkbox" name="sep" value="sep"><label>Sep</label>
+			<input type="checkbox" name="oct" value="oct"><label>Oct</label>
+			<input type="checkbox" name="nov" value="nov"><label>Nov</label><br>
+			<input type="checkbox" name="dec" value="dec"><label>Dec</label>
+			<input type="checkbox" name="jan" value="jan"><label>Jan</label>
+			<input type="checkbox" name="feb" value="feb"><label>Feb</label>
+			<input type="checkbox" name="mar" value="mar"><label>Mar</label>
+	</fieldset></div>
+	
+
+
+<style >
+	input[type="submit"],input[type="reset"]{
+		padding: 5px;
+		margin-top: 50px;
+		width: 100px;
+		font-weight: bold; 
+		background-color: #2d545e; 
+        color: white;
+        border-radius: 4px;
+
+	}
+</style><center>
+      <input type="submit" name="" value="Submit">
+      <input type="reset" name="" value="Reset"></center>
+    </td>
+    </tr>
+</div></table> </form>                                     
+</div>          
+</div>
+
+</body>
+
+</html>

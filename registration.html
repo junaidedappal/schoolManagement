@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style >
+	a{
+		text-decoration: none;
+				color: white;
+
+	}
+	.menu_list li{
+		text-decoration: none;
+		display: inline-flex;
+		padding-right: 20px;
+		font-weight: bold;
+		padding: 10px;
+
+
+	}
+	.leftlist li{
+		text-decoration: none;
+		font-weight: bold;
+		padding: 5px;
+		color: white;
+		display: flex;
+		border-bottom:  1px solid white;
+		padding: 10px;
+}
+	.menu_list li:hover{
+		background: #e83e8c;
+	}
+		.leftlist li:hover{
+			background: white;
+			color: black;
+}
+
+input[type="text"],input[type="number"] ,input[type="date"]{
+	width: 175px;
+}
+
+	input[type="submit"],input[type="reset"]{
+	
+		margin-top:  5px;
+		width: 100px;
+		font-weight: bold; 
+		background-color: #2d545e; 
+        color: white;
+        border-radius: 4px;
+
+	}
+</style>
+
+<body >
+	
+<main style="padding: 0px;max-width: 1000px;margin: auto;">
+	<section class="header" style="padding: 0px;">
+		<div class="header_poster">
+			<img style="width: 100%;" src="vkm.png">
+		</div>
+		<div class="header_nav" style="background: #007bff; margin-top: -20px;">
+		<div class="menu_list">
+			<ul >
+				<li>
+					<a href="home.php">Home</a>
+				</li>
+								
+
+				<li>
+					<a href="payment.php">Payment</a>
+				</li>
+	<li>
+					<a href="staff.html">Staff</a>
+				</li>
+
+			
+				
+				
+			</ul>
+		</div>
+		</div>
+	</section>
+
+<div class="container" style="margin-top: -15px;">
+	<div class="containerleft" style="width: 25%;float: left;height: 460px;background: #007bff;">
+       <ul class="leftlist" style="padding: 10px;">
+       	<a href="reg_search.html"><li>Search</li></a>
+       	<a href="registration.html"><li> Students Registration</li></a>
+       	<a href="classupgrade.html"><li>Class Updation</li></a>
+       	<a href="allstud.php"><li>Students Details</li></a>
+       	<a href="osf.php"><li>OSF</li></a>
+  </ul>
+	</div>
+	<div class="containerright" style="width:75%;height: 460px;background: url('abc.jpg');
+    background-repeat: no-repeat;background-size: cover;float: left;">
+		<style >
+			td{
+				padding: 3px;
+				font-weight: bolder;
+
+			}
+		</style>
+		<form action="reg_upload.php" method="POST">
+
+			<fieldset style="padding: 5px;border: none;" ><center>
+				<legend style="font-weight: bolder;padding: 5px;font-size: 25px;margin-bottom: 3px;color: white;">Student Registration</legend>
+				<table style="border: 1px solid black;padding: 5px;background: rgb(255, 253, 253,.8);">
+					<tr><td><label>Name</label></td><td><input type="text" name="name" required=""></td></tr>
+					<td><label>SKIMVB ID</label></td><td><input type="text" name="skimvb_id"></td></tr>
+					<tr><td><label>Admn.No</label></td><td><input type="text" name="admn_num" required=""></td></tr>
+					<tr><td><label>Address</label></td><td><input type="text" name="address" required=""></td></tr>
+                    <tr><td><label>Father's Name</label></td><td><input type="text" name="fathername" required=""></td></tr>
+					<tr><td><label>Date Of Birth</label></td><td><input type="date" name="dob" required=""></td></tr>
+
+
+				    <tr><td><label>Class</label></td>
+        <td><select name="class" style="width: 175px;"><option selected="">--class--</option>
+		<option value="1">1</option>	
+		<option value="2">2</option>
+		<option value="3">3</option>	
+		<option value="4">4</option>	
+		<option value="5">5</option>	
+		<option value="6">6</option>	
+		<option value="7">7</option>	
+		<option value="8">8</option>	
+		<option value="9">9</option>	
+		<option value="10">10</option>	
+		<option value="11">11</option>
+		<option value="12">12</option>	
+		<option value="0">osf</option>	
+
+     	</select>
+		</td>
+				    </tr>
+
+
+					<tr><td><label>Place</label></td><td><input type="text" name="place" required=""></td></tr>
+					<tr><td><label>Contact No</label></td><td><input type="text" name="contact" required=""></td></tr>
+      				<tr><td><label>Year of Admission</label></td><td><input type="number" name="year_of_admn"></td></tr>
+                    <br>
+                    <tr><td><input type="reset" name=""></td><td><input type="submit" name=""></td></tr></table></fieldset>
+
+
+		</form>
+          
+	</div>
+	
+</div>
+
+</main>
+</body>
+</html>

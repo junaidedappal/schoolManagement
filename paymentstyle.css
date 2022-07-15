@@ -1,0 +1,86 @@
+
+.top{
+	position: relative;
+}
+
+}
+.topleft{
+
+margin-left: 15px;
+margin-top: -15px;
+}
+
+.topright{
+position: absolute;
+top: 0px;
+right: 0px;
+}
+.headimg{
+	position: relative;
+	top: 0px;
+	height: 60px;
+}
+.navbar{
+background-color: rgba(0,0,0,.7);
+
+}
+.navli{
+	text-decoration: none;
+	padding: 10px;
+	display: inline-flex;
+	cursor: pointer;
+	font-size: 20px;
+	
+
+}
+
+
+.anone{
+	text-decoration: none;
+	color: white;
+}
+	
+.containerbody{
+    position: relative;
+	margin-top: -15px;
+}
+.containerbodyleft{
+	position: absolute;
+	left: 0px;
+	width: 24%;
+	background-color: rgba(0,0,0,.6);
+	height: 480px;
+
+}
+.leftul li:hover{
+ background: white;
+ color:#007bff;
+}
+.leftlist{
+text-decoration: none;
+display: flex;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+.leftlist li{
+	border-bottom: 1px solid black;
+	
+}
+.containerbodyright{
+position: absolute;
+right: 0px;
+width: 76%;
+background-color: rgba(0,0,0,.2);
+height: 480px;
+
+}
+.foot{
+}
+.footer{
+	position: absolute;
+	top: 460px;
+	left: 40%;
+	color:#444;
+
+
+}

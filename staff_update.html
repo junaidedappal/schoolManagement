@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style >
+	a{
+		text-decoration: none;
+				color: white;
+
+	}
+	.menu_list li{
+		text-decoration: none;
+		display: inline-flex;
+		padding-right: 20px;
+		font-weight: bold;
+		padding: 10px;
+
+
+	}
+	.leftlist li{
+		text-decoration: none;
+		font-weight: bold;
+		padding: 5px;
+		color: white;
+		display: flex;
+		border-bottom:  1px solid white;
+		padding: 10px;
+}
+	.menu_list li:hover{
+		background: #e83e8c;
+	}
+		.leftlist li:hover{
+			background: white;
+			color: black;
+}
+
+input[type="text"],input[type="number"] ,input[type="date"]{
+	width: 175px;
+}
+
+	input[type="submit"],input[type="reset"]{
+	
+		margin-top:  5px;
+		width: 100px;
+		font-weight: bold; 
+		background-color: #2d545e; 
+        color: white;
+        border-radius: 4px;
+
+	}
+</style>
+
+<body">
+	
+<main style="padding: 0px;max-width: 1000px;margin: auto;">
+	<section class="header" style="padding: 0px;">
+		<div class="header_poster">
+			<img style="width: 100%;" src="vkm.png">
+		</div>
+		<div class="header_nav" style="background: #007bff; margin-top: -20px;">
+		<div class="menu_list">
+			<ul >
+				<li>
+					<a href="home.php">Home</a>
+				</li>
+							
+				<li>
+					<a href="payment.php">Payment</a>
+				</li>
+
+				
+				
+			</ul>
+		</div>
+		</div>
+	</section>
+
+<div class="container" style="margin-top: -15px;">
+	<div class="containerleft" style="width: 25%;float: left;height: 440px;background:#007bff;">
+       <ul class="leftlist" style="padding: 10px;">
+       	 <a href="staff.html"><li>Staff Registration</li></a>
+       	 <a href="stafflist.php"><li>Staff Details</li></a>
+
+  </ul>
+	</div>
+	<div class="containerright" style="width:75%;height: 440px;background:pink;float: left;">
+		<style >
+			td{
+				padding: 3px;
+				font-weight: bolder;
+
+			}
+		</style>
+		<form action="staff_update.php" method="POST">
+
+			<fieldset style="padding: 10px;border: none;" ><center>
+				<legend style="font-weight: bolder;padding: 5px;font-size: 30px;margin-bottom: 5px;">Staff Updation</legend>
+				<table style="border: 1px solid black;padding: 10px;">
+					<tr><td><label>ID</label></td><td><input type="text" name="id" required="" ></td></tr>
+					<td><label>Msr Id</label></td><td><input type="text" name="msr_id"></td></tr>
+					<tr><td><label>Address</label></td><td><input type="text" name="address" ></td></tr>
+					<tr><td><label>Contact No</label></td><td><input type="text" name="contact" ></td></tr>
+					<tr><td><label>Adhar.No</label></td><td><input type="text" name="adhar_no" ></td></tr>
+
+
+				    <tr><td><label>Class</label></td>
+        <td><select name="class" style="width: 175px;"><option selected=" "></option>
+		<option value="1">1</option>	
+		<option value="2">2</option>
+		<option value="3">3</option>	
+		<option value="4">4</option>	
+		<option value="5">5</option>	
+		<option value="6">6</option>	
+		<option value="7">7</option>	
+		<option value="8">8</option>	
+		<option value="9">9</option>	
+		<option value="10">10</option>	
+		<option value="11">11</option>
+		<option value="12">12</option>	
+		<option value="osf">osf</option>	
+
+     	</select>
+		</td>
+				    </tr>
+
+					<tr><td><label>On Range</label></td><td><input type="text" name="on_range" ></td></tr>
+
+					<tr><td><label>Working Range</label></td><td><input type="text" name="working" ></td></tr>
+                    <br>
+                    <tr><td><input type="reset" name=""></td><td><input type="submit" name=""></td></tr></table></fieldset>
+
+
+		</form>
+          
+	</div>
+	
+</div>
+
+</main>
+</body>
+</html>

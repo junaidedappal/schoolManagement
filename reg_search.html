@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<style>
+		a {
+
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+			background: #007bff;
+		}
+	</style>
+	<center>
+		<main style="padding: 0px; max-width: 1000px;">
+			<section class="header" style="padding: 0px;">
+				<div class="header_poster">
+					<img style="width: 100%;" src="vkm.png">
+				</div>
+				<div class="header_nav" style="background: #007bff; margin-top: -20px;">
+					<div class="menu_list">
+					</div>
+			</section>
+			<div style=" height: 500px;background-image:url('assets/loginbg.jpg') ; background-repeat: no-repeat;background-size: cover;">
+				<fieldset style="width: 200px;
+height: 300px;padding: 20px;position: absolute;top: 200px;left: 225px; background:rgb(255, 255, 255,.8);">
+					<center>
+						<form action="reg_search.php" method="POST">
+							<p><b>SEARCH STUDENTS INFO</b></p>
+							<select name="field" style="width: 175px;">
+								<option selected="">--Field--</option>
+								<option value="name">NAME</option>
+								<option value="admn_num">ADMISSION NO</option>
+								<option value="skimvb_id">SKIMVB ID</option>
+								<option value="address">HOUSE NAME</option>
+								<option value="father">FATHER NAME</option>
+								<option value="class">CLASS</option>
+								<option value="place">PLACE</option>
+								<option value="contact">CONTACT</option>
+								<option value="year_of_admn">YEAR OF ADMISSION</option>
+							</select><br>
+							<input type="" name="searchname" style="margin-top: 20PX;"><br>
+							<input type="submit" name="" style="margin-top: 40PX;">
+						</form>
+
+						<div style="margin-top: 60px;">
+							<a href="allstud.php">view all</a>
+							<a href="home.php" style="background:#25D366;">home</a>
+						</div>
+					</center>
+				</fieldset>
+
+
+
+
+				<fieldset style="background:rgb(255, 255, 255,.8);width: 200px;
+height: 300px;padding: 20px; position: absolute;left: 520px;top: 200px;">
+					<center>
+						<form action="due_search.php" method="POST">
+							<p><B>MONTHLY FEE STATUS</B></p>
+							<select name="month" style="width: 175px;">
+								<option selected="">--month--</option>
+								<option value="jan">January</option>
+								<option value="feb">February</option>
+								<option value="mar">March</option>
+								<option value="apr">Apr</option>
+								<option value="may">May</option>
+								<option value="jun">June</option>
+								<option value="jul">July</option>
+								<option value="aug">August</option>
+								<option value="jul">September</option>
+								<option value="jul">October</option>
+								<option value="jul">November</option>
+								<option value="jul">December</option>
+							</select><br>
+
+							<select name="class" style="width: 175px;margin-top: 20PX;">
+								<option selected="">--class--</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select><br>
+							<input type="submit" name="" style="margin-top: 40PX;">
+						</form>
+
+						<style>
+						</style>
+						<div style="margin-top: 60px;">
+							<a href="allfeemon.php">view all</a>
+							<a href="home.php" style="background:#25D366;">home</a>
+						</div>
+					</center>
+				</fieldset>
+
+
+				<fieldset style="background:rgb(255, 255, 255,.8);width: 200px;
+height: 300px;padding: 20px; position: absolute;top: 200px;left:820px ;">
+					<center>
+						<form action="fee_search.php" method="POST">
+							<p><B>STUDENT PAYMENT INFO</B></p>
+							<select name="field" style="width: 175px;">
+								<option selected="">--Field--</option>
+								<option value="name">NAME</option>
+								<option value="reg_num">ADMISSION NO</option>
+								<option value="rcv_no">RECIEPT NO</option>
+
+							</select><br>
+							<input type="" name="searchname" style="margin-top: 20PX;"><br>
+							<input type="submit" name="" style="margin-top: 40PX;">
+						</form>
+
+						<style>
+						</style>
+						<div style="margin-top: 60px;">
+							<a href="allfee.php">view all</a>
+							<a href="home.php" style="background:#25D366;">home</a>
+
+						</div>
+					</center>
+				</fieldset>
+
+</body>
+
+</html>
