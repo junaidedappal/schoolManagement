@@ -1,3 +1,3 @@
-School Management App : computer application usin php
+School Management App : using php
 
-visit redapple.epizy.com
+for visit : http://redapple.epizy.com/
